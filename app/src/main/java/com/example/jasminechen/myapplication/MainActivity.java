@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //setting up the buttons
+
         btnSunny = (Button) findViewById(R.id.buttonSunny);
         btnFoggy = (Button) findViewById(R.id.buttonFoggy);
         btnRainy = (Button) findViewById(R.id.buttonRainy);
