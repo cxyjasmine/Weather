@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvCondition;
     private Button btnSunny;
     private Button btnFoggy;
+    private Button btnRainy;
     private Firebase mFireRef;
 
     @Override
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tvCondition = (TextView) findViewById(R.id.textViewCondition);
 
-        mFireRef = new Firebase("https://console.firebase.google.com/project/fire-weather-b8112/condition");
+        mFireRef = new Firebase("https://fire-weather-b8112.firebaseio.com/condition");
         mFireRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnSunny = (Button) findViewById(R.id.buttonSunny);
         btnFoggy = (Button) findViewById(R.id.buttonFoggy);
+        btnRainy = (Button) findViewById(R.id.buttonRainy);
         btnSunny.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mFireRef.setValue("Foggy");
+            }
+        });
+        btnRainy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mFireRef.setValue("Rainy");
             }
         });
     }
