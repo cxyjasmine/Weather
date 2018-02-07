@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">875557956527-dnosqpbp0jf4t8hblnqb2u7t0jqd58lm.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://crowd-weather-f030d.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">875557956527</string>
+    <string name="google_api_key" translatable="false">AIzaSyAgQ-LQ4itlNR_Ahny1-02io_xDRnMeLZo</string>
+    <string name="google_app_id" translatable="false">1:875557956527:android:fc5ac1bb673f5a88</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAgQ-LQ4itlNR_Ahny1-02io_xDRnMeLZo</string>
+    <string name="google_storage_bucket" translatable="false">crowd-weather-f030d.appspot.com</string>
+    <string name="project_id" translatable="false">crowd-weather-f030d</string>
+</resources>
